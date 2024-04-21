@@ -28,6 +28,7 @@ public class BaseSetup {
             FileInputStream fileInputStream = new FileInputStream(propertyFile);
             properties = new Properties();
             properties.load(fileInputStream);
+            //just comment
         }
         catch (IOException ex){
             throw new RuntimeException("Config file not found"+ex.getMessage());
